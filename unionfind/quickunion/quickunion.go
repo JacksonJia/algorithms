@@ -41,7 +41,6 @@ func (qu *QuickUnion) Connected(p, q int) bool {
 
 func (qu *QuickUnion) getRoot(p int) int {
 	var parent int
-
 	for {
 		parent = qu.Items[p]
 		if qu.Items[parent] == parent {
